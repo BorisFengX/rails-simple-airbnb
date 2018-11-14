@@ -1,0 +1,50 @@
+<div class="header">
+  <h3><%= link_to "Simple Airbnb", flats_path %></h3>
+
+  <form action="/flats/filter" class="form-inline">
+    <input type="string" class="form-control" name="name">
+    <input type="submit" class="form-control btn-primary" value="Search">
+    <%= link_to "Add Flat", new_flat_path %>
+  </form>
+
+<!--   <ul class="list-inline">
+    <li><input type="text"></li>
+    <li><%= link_to "Search", flats_path %></li>
+    <li><%= link_to "Add Flat", new_flat_path %></li>
+  </ul> -->
+</div>
+<h1>Searched Flats</h1>
+
+<div class = "content-container">
+  <div class="cards">
+    <div class="row">
+      <% @flats.each do |flat| %>
+        <div class = "col-xs-12 col-sm-6 col-md-4">
+          <div class="card">
+            <div class="card-banner"></div>
+            <div class="card-content">
+              <h2><%= flat.name %></h2>
+              <p><%= flat.address %></p>
+              <ul class="list-inline">
+                <li><%= flat.number_of_guests %></li>
+                <li><%= flat.price_per_night %></li>
+              </ul>
+            </div>
+
+            <div class="card-footer">
+              <ul class="list-inline">
+                <li><%= link_to "More info", flat_path(flat) %></li>
+                <li><%= link_to "Edit", edit_flat_path(flat) %></li>
+                <li><%= link_to "Remove", flat_path(flat), method: :delete,
+                data: { confirm: "Are you sure?" } %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+

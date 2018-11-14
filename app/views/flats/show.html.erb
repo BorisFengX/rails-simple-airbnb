@@ -1,0 +1,30 @@
+<div class="header">
+  <h3><%= link_to "Simple Airbnb", flats_path %></h3>
+
+  <form action="/flats/filter" class="form-inline">
+    <input type="string" class="form-control" name="name">
+    <input type="submit" class="form-control btn-primary" value="Search">
+    <%= link_to "Add Flat", new_flat_path %>
+  </form>
+</div>
+
+<div class="page-banner">
+</div>
+
+<div>
+  <h1><%= @flat.name %></h1>
+  <p><%= @flat.address %></p>
+</div>
+
+<div>
+  <h2>A bit more about this flat...</h2>
+  <p><%= @flat.description %></p>
+</div>
+<div>
+  <h1>Details</h1>
+  <ul class="list-inline">
+    <li><%= @flat.number_of_guests %></li>
+    <li><%= @flat.price_per_night %></li>
+
+  </ul>
+</div>
