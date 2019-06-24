@@ -1,0 +1,29 @@
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Short Name</th>
+    <th>Distance DGCFS</th>
+    <th>Duration DGCFS</th>
+    <th>Distance Yantian</th>
+    <th>Duration Yantian</th>
+    <th>Distance XMCFS</th>
+    <th>Duration XMCFS</th>
+    <th>Distance XIAMEN</th>
+    <th>Duration XIAMEN</th>
+  </tr>
+  <% @suppliers.each do |i| %>
+  <tr>
+    <td><%= i.name %></td>
+    <td><%= i.short_name %></td>
+    <td><%= i.distance_dgcfs %></td>
+    <td><%= i.duration_dgcfs %></td>
+    <td><%= i.distance_yantian %></td>
+    <td><%= i.duration_yantian %></td>
+    <td><%= i.distance_xmcfs %></td>
+    <td><%= i.duration_xmcfs %></td>
+    <td><%= i.distance_xiamen %></td>
+    <td><%= i.duration_xiamen %></td>
+  </tr>
+  <% end %>
+</table>

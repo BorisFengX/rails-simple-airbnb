@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  short_name: MyString
+  location_supplier: MyString
+  location_dgcfs: MyString
+  location_xmcfs: MyString
+  location_yantian: MyString
+  location_xiamen: MyString
+  distance_dgcfs: MyString
+  duration_dgcfs: MyString
+  distance_yantian: MyString
+  duration_yantian: MyString
+  distance_xmcfs: MyString
+  duration_xmcfs: MyString
+  distance_xiamen: MyString
+  duration_xiamen: MyString
+
+two:
+  name: MyString
+  short_name: MyString
+  location_supplier: MyString
+  location_dgcfs: MyString
+  location_xmcfs: MyString
+  location_yantian: MyString
+  location_xiamen: MyString
+  distance_dgcfs: MyString
+  duration_dgcfs: MyString
+  distance_yantian: MyString
+  duration_yantian: MyString
+  distance_xmcfs: MyString
+  duration_xmcfs: MyString
+  distance_xiamen: MyString
+  duration_xiamen: MyString

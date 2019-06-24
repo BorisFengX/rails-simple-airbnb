@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'supplier', to: "flats#supplier"
+
   resources :flats do
     collection do                       # collection => no restaurant id in URL
       get 'filter', to: "flats#filter"  # RestaurantsController#top
