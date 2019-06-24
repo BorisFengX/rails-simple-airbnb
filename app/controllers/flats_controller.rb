@@ -66,10 +66,10 @@ class FlatsController < ApplicationController
     #   location_yantian = i.location_yantian
     #   location_xiamen = i.location_xiamen
 
-    #   url_route_dgcfs = "http://restapi.amap.com/v3/direction/driving?key=6504f14e7ffd897acb25caf682f90186&origin=#{location_supplier}&destination=#{location_dgcfs}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
-    #   url_route_yantian = "http://restapi.amap.com/v3/direction/driving?key=6504f14e7ffd897acb25caf682f90186&origin=#{location_supplier}&destination=#{location_yantian}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
-    #   url_route_xmcfs = "http://restapi.amap.com/v3/direction/driving?key=6504f14e7ffd897acb25caf682f90186&origin=#{location_supplier}&destination=#{location_xmcfs}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
-    #   url_route_xiamen = "http://restapi.amap.com/v3/direction/driving?key=6504f14e7ffd897acb25caf682f90186&origin=#{location_supplier}&destination=#{location_xiamen}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
+    #   url_route_dgcfs = "http://restapi.amap.com/v3/direction/driving?key=***&origin=#{location_supplier}&destination=#{location_dgcfs}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
+    #   url_route_yantian = "http://restapi.amap.com/v3/direction/driving?key=***&origin=#{location_supplier}&destination=#{location_yantian}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
+    #   url_route_xmcfs = "http://restapi.amap.com/v3/direction/driving?key=***&origin=#{location_supplier}&destination=#{location_xmcfs}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
+    #   url_route_xiamen = "http://restapi.amap.com/v3/direction/driving?key=***&origin=#{location_supplier}&destination=#{location_xiamen}&originid=&destinationid=&extensions=base&strategy=0&waypoints=&avoidpolygons=&avoidroad="
 
     #   res_dgcfs = JSON.parse(open(url_route_dgcfs).read)
     #   res_yantian = JSON.parse(open(url_route_yantian).read)
